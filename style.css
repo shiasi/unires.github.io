@@ -89,4 +89,30 @@ footer {
     margin: 0 auto;
 }
 
-/* .value.circles {} */
+.learning {
+    background-color: #4d8a23;
+    margin: 2px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:;
+}
+
+.interests p {
+    background-color: orangered;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    margin: 2px 0;
+}

@@ -146,16 +146,16 @@
             <section class="sector">
                 <h2>Interests</h2>
                 <div class="interests">
-                    <p>Programming</p>
-                    <p>Entrepreneurship</p>
-                    <p>Running</p>
-                    <p>Writing</p>
-                    <p>Conversation & Negotiation</p>
-                    <p>Novels & Stories</p>
-                    <p>Music</p>
-                    <p>Trailing</p>
-                    <p>Nature & Environment</p>
-                    <p>Designing</p>
+                    <p class="interest">Programming</p>
+                    <p class="interest">Entrepreneurship</p>
+                    <p class="interest">Running</p>
+                    <p class="interest">Writing</p>
+                    <p class="interest">Conversation & Negotiation</p>
+                    <p class="interest">Novels & Stories</p>
+                    <p class="interest">Music</p>
+                    <p class="interest">Trailing</p>
+                    <p class="interest">Nature & Environment</p>
+                    <p class="interest">Designing</p>
                 </div>
             </section>
 
@@ -180,17 +180,11 @@
     </div>
 
     <script>
-        // const skillsRank = document.querySelectorAll('.value.circles');
-        // const circle = document.createElement('i');
-        // circle.classList.add('rank');
-
-        // console.log(skillsRank);
-        // skillsRank.forEach(function (e) {
-        //     number = parseFloat(e.textContent) + 5;
-        //     e.innerHTML = ;
-        // });
+        const skillsRanks = document.querySelectorAll('.value.circles');
+        skillsRanks.forEach( (el) => {
+            el.lastChild.remove();
+        });
     </script>
-
 </body>
 
 </html>

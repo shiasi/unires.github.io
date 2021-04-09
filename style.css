@@ -89,23 +89,28 @@ footer {
     margin: 0 auto;
 }
 
-.learning {
-    background-color: #4d8a23;
+.pad-box {
     margin: 2px 0;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
+
+}
+
+.learnings .pad-box{
+    background-color: #4d8a23;
     color: white;
-    font-weight: bold;
     display: inline-block;
 }
 
-.interest {
+.interests .pad-box{
     background-color: #4d8a23;
-    margin: 2px 0;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
     color: white;
     display: inline-block;   
+}
+
+.projects .pad-box {
+    background-color: #4d8a23;
+    color: white;
+    display: inline-block;
 }

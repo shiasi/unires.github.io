@@ -73,8 +73,8 @@ a {
 }
 
 .grid-wrap .sector:nth-child(odd):last-child {
-    background-color: white;
     grid-column: span 2;
+    text-align: center;
 }
 
 .sector-mini {
@@ -100,19 +100,12 @@ footer {
     display: inline-block;
 }
 
-.interests {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items:;
-}
-
-.interests p {
-    background-color: orangered;
+.interest {
+    background-color: #4d8a23;
+    margin: 2px 0;
     padding: 10px;
+    border-radius: 5px;
     text-align: center;
     color: white;
-    border-radius: 5px;
-    margin: 2px 0;
+    display: inline-block;   
 }

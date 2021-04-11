@@ -13,7 +13,6 @@ body {
     line-height: 1.7;
     background-color: #bbb;
     color: #eee;
-    /* background-image: linear-gradient(-35deg, rgba(255, 142, 69, 0.45), rgba(95, 251, 241, 0.25) 60%); */
     background-image: linear-gradient(-35deg, rgba(255, 142, 69, 0.45), rgba(77, 138, 35, 0.25) 60%);
     background-attachment: fixed;
     background-position: center;
@@ -31,26 +30,12 @@ a {
     text-decoration: none;
 }
 
-.rank {
-    display: inline-block;
-    border: 2px solid #333;
-    border-radius: 50%;
-    height: 15px;
-    width: 15px;
-    margin: 0 1px;
-}
-
-.rank.full {
-    background-color: #4d8a23;
-    /* background-color: rgb(95, 251, 241); */
-}
-
 .wrapper {
     max-width: 960px;
     margin: 64px auto;
     background-color: rgba(255, 255, 255, 0.8);
     color: #333;
-    padding: 01rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 10px;
 }
 
@@ -72,10 +57,6 @@ a {
     gap: 32px;
 }
 
-.grid-wrap .sector:nth-child(odd):last-child {
-    grid-column: span 2;
-    text-align: center;
-}
 
 .sector-mini {
     display: flex;
@@ -89,28 +70,74 @@ footer {
     margin: 0 auto;
 }
 
+/* Tags */
+
 .pad-box {
     margin: 2px 0;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-
 }
 
-.learnings .pad-box{
+.learnings .pad-box {
     background-color: #4d8a23;
     color: white;
     display: inline-block;
 }
 
-.interests .pad-box{
+.interests .pad-box {
     background-color: #4d8a23;
     color: white;
-    display: inline-block;   
+    display: inline-block;
 }
 
 .projects .pad-box {
     background-color: #4d8a23;
     color: white;
     display: inline-block;
+}
+
+/* Ranking Circles */
+
+.rank {
+    display: inline-block;
+    border: 2px solid #333;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 0 1px;
+}
+
+.rank.full {
+    background-color: #4d8a23;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 720px) {
+    .grid-wrap .sector:nth-child(odd):last-child {
+        grid-column: span 2;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sector-mini {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .grid-wrap {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .name img {
+        max-width: 196px;
+        border-radius: 50%;
+        margin: 30px 0;
+    }
 }
